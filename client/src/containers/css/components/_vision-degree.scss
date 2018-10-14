@@ -1,0 +1,69 @@
+.vision-degree {
+    padding: 15px 15%;
+    text-align: center;
+
+    &__title {
+        font-size: 22px;
+        padding: 10px;
+        color: #595a5e;
+
+    }
+
+    &__content {
+        background-image: url("../assets/degree_of_bachelor_en.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+        box-shadow: 1px 1px 20px rgb(119, 119, 119);
+
+        // width: 60%;
+        height: 80vh;
+        margin-bottom: 10px;
+        position: relative;
+        background-color: white;
+
+        & > h2 {
+            position: absolute;
+            top: 38%;
+            width: 100%;
+            font-family: 'Marcellus SC', serif;
+            color: #595A5E;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        &--info {
+            position: absolute;
+            top: 49.2%;
+            left: 46%;
+            text-align: left;
+            font-size: 14px;
+
+            & > p {
+                color: #666561;
+                margin-bottom: 4%;
+            }
+            
+        }
+
+        &--number {
+            position: absolute;
+            top: 78%;
+            left: 32%;
+            text-align: left;
+
+            & > a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #e23131;
+                display: block;
+                letter-spacing: 0.5px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.poster {
+    padding: 10px 15%;
+    background-color: #26a69a !important;
+    position: relative;
+
+    &__caption {
+        margin-top: 15px;
+        font-size: 25px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: white;
+        text-align: right;
+        font-family: 'Roboto', sans-serif;
+        z-index: 0;
+
+        & > b {
+            font-size: 30px;
+            font-family: 'Domine', serif;
+        }
+
+        & > span {
+            color: white;
+            display: inline-block;
+        }
+    }
+
+    & > .typing--degree {
+        margin-top: 45px;
+        background: white;
+        padding: 45px 30%;
+
+        .input-effect {
+            position: relative;
+        }
+
+        input[type="text"] {
+            font-size: 24px;
+            color: #333; 
+            width: 100%; 
+            letter-spacing: 1px;
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid gray;
+            box-sizing: border-box;
+            padding: 3px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .effect-16 ~ .focus-border {
+            position: absolute;
+            bottom: 0; 
+            left: 0; 
+            width: 0; 
+            height: 2px; 
+            background-color: #3399FF; 
+            transition: 0.4s;
+        }
+        .effect-16:focus ~ .focus-border,
+        .has-content.effect-16 ~ .focus-border {
+            width: 100%;
+            transition: 0.4s;
+        }
+        .effect-16 ~ label {
+            position: absolute; 
+            left: 0; 
+            top: 0px; 
+            color: #aaa; 
+            transition: 0.3s; 
+            z-index: 1; 
+            letter-spacing: 0.5px;
+        }
+        .effect-16:focus ~ label, .has-content.effect-16 ~ label {
+            top: -16px; 
+            font-size: 12px; 
+            color: #3399FF; 
+            transition: 0.3s;
+        }
+    }
+}

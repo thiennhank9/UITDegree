@@ -1,0 +1,4 @@
+.DS_Store
+
+# ignore source file (contain sever and client)
+source_UIT_degree/

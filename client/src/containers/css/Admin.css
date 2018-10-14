@@ -1,0 +1,253 @@
+.admin-wrap {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+.admin-wrap .banner {
+  padding-top: 20px;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  background: #26a69a;
+}
+
+.admin-wrap .banner > h3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.admin-wrap .banner > hr {
+  background: white;
+  max-width: 450px;
+  margin: auto;
+  margin-top: 10px;
+  height: 2px;
+}
+
+.admin-wrap .features {
+  padding: 30px 22%;
+  overflow: hidden;
+}
+
+.admin-wrap .features.list {
+  padding: 30px 10%;
+}
+
+.admin-wrap .features > .feature {
+  width: 48%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 0;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.admin-wrap .features > .feature > i {
+  font-size: 45px;
+  margin: 25px 0;
+  transition: all 0.5s;
+}
+
+.admin-wrap .features > .feature > p {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+
+.admin-wrap .features > .feature:hover {
+  transform: translate(0, -10px);
+  cursor: pointer;
+  box-shadow: 0 1px 10px #353535;
+}
+
+.admin-wrap .features > .feature:hover > i {
+  transform: scale(1.5);
+}
+
+.admin-wrap .features > .feature:nth-of-type(1) {
+  float: left;
+  background: #FE5F55;
+}
+
+.admin-wrap .features > .feature:nth-of-type(2) {
+  float: right;
+  background: #4ABDAC;
+}
+
+.admin-wrap .features > .feature:nth-of-type(3) {
+  float: left;
+  background: #F7B733;
+  margin: 0;
+}
+
+.admin-wrap .features > .feature:nth-of-type(4) {
+  float: right;
+  background: #4484CE;
+  margin: 0;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.spacing {
+  padding: 1rem;
+}
+
+.head-text-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.head-text-navigation > .navigation-admin, .head-text-navigation > .text-centered, .head-text-navigation > .space-empty {
+  flex: none;
+  width: 33.3%;
+}
+
+.head-text-navigation > .navigation-admin {
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #4ABDAC;
+}
+
+.head-text-navigation > .navigation-admin > i {
+  font-size: 2rem;
+  padding: 0 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.navigation {
+  padding: 10px 15%;
+  background-color: #26a69a !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__button--left {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.navigation__button--left > i {
+  margin-right: 20px;
+}
+
+.navigation__button--left:hover {
+  cursor: pointer;
+}
+
+.navigation__button--login {
+  margin-left: auto;
+  padding: 8px 22px;
+  background: #df4646;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.navigation__button--login:hover {
+  cursor: pointer;
+  background: #f33e3e;
+}
+
+.form--create-degree {
+  background: white;
+  padding: 25px 10%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px gray;
+}
+
+.form--create-degree > h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px 0px;
+  margin-bottom: 15px;
+}
+
+.form--create-degree > h5.is-success {
+  color: #23d160;
+}
+
+.form--create-degree input, .form--create-degree select {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid rgba(189, 189, 189, 0.61);
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 15px;
+  appearance: none;
+}
+
+.form--create-degree input::placeholder, .form--create-degree select::placeholder {
+  color: #4b4b4b;
+}
+
+.form--create-degree select {
+  background: transparent;
+}
+
+.form--create-degree > div {
+  text-align: left;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+.form--create-degree input[type="submit"], .form--create-degree input[type="button"] {
+  width: 48%;
+  text-align: center;
+  color: white;
+  border: none;
+  transition: all 0.3s;
+}
+
+.form--create-degree input[type="submit"]:hover, .form--create-degree input[type="button"]:hover {
+  cursor: pointer;
+}
+
+.form--create-degree input[type="submit"] {
+  float: right;
+  background: #66bb6a;
+}
+
+.form--create-degree input[type="submit"]:hover {
+  background: #43a047;
+}
+
+.form--create-degree input[type="button"] {
+  float: left;
+  background: #ef5350;
+}
+
+.form--create-degree input[type="button"]:hover {
+  background: #d32f2f;
+}
+
+.form--create-degree .button {
+  overflow: hidden;
+}
+
+.form--create-degree input[name="student_name"] {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Admin.css.map */

@@ -1,0 +1,21 @@
+.footer {
+    padding-top: 15px;
+    background-color: #26a69a;
+    margin-top: auto;
+
+    &__content {
+        padding: 15px 15%;
+        display: flex;
+        align-items: center;
+        background-color: #009688;
+        
+        & > p {
+            color: white;
+            font-weight: 300;
+        }
+
+        & > p:last-of-type {
+            margin-left: auto;
+        }
+    }
+}

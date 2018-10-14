@@ -1,0 +1,85 @@
+.form--create-degree {
+    background: white;
+    padding: 25px 10%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px gray;
+
+    & > h5 {
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 10px 0px;
+        margin-bottom: 15px;
+
+        &.is-success {
+            color: hsl(141, 71%, 48%);
+        }
+    }
+
+    & input, & select {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-top: 5px;
+        border: 1px solid rgba(189, 189, 189, 0.61);
+        box-sizing: border-box;
+        text-align: left;
+        border-radius: 5px;
+        font-size: 15px;
+        // text-transform: capitalize;
+        appearance: none;
+
+        &::placeholder {
+            color: rgb(75, 75, 75);
+        }
+    }
+
+    & select {
+        background: transparent;
+    }
+
+    & > div {
+        text-align: left;
+        margin-bottom: 15px;
+        color: gray;
+    }
+
+    & input[type="submit"], & input[type="button"] {
+        width: 48%;
+        text-align: center;
+        color: white;
+        border: none;
+        transition: all 0.3s;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & input[type="submit"] {
+        float: right;
+        background: #66bb6a;
+
+        &:hover {
+            background: #43a047;
+        }
+    }
+
+    & input[type="button"] {
+        float: left;
+        background: #ef5350;
+
+        &:hover {
+            background: #d32f2f;
+        }
+    }
+
+    & .button {
+        overflow: hidden;
+    }
+
+    & input[name="student_name"] {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}

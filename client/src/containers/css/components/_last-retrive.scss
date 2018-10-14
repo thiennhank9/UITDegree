@@ -1,0 +1,37 @@
+.last-retrive {
+    padding: 15px 15%;
+    min-height: 45vh;
+
+    &__content {
+        background-color: white;
+        border: rgb(226, 226, 226);
+        box-shadow: 0 1px 10px gray;
+        padding: 20px;
+
+        & > h6 {
+            padding: 10px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        &__list--students {
+            padding: 20px 10px;
+            line-break: normal;
+            display: flex;
+            flex-wrap: wrap;
+
+            & > a {
+                text-decoration: none;
+                padding: 5px 10px;
+                background: rgb(211, 211, 211);
+                border-radius: 30px;
+                color: white;
+                margin: 3px;
+
+                & > span {
+                    color: rgb(91, 139, 212);
+                }
+            }
+        }
+    }
+}

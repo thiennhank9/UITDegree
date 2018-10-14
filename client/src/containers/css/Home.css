@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Domine|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Marcellus+SC");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.navigation {
+  padding: 10px 15%;
+  background-color: #26a69a !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__button--left {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.navigation__button--left > i {
+  margin-right: 20px;
+}
+
+.navigation__button--left:hover {
+  cursor: pointer;
+}
+
+.navigation__button--login {
+  margin-left: auto;
+  padding: 8px 22px;
+  background: #df4646;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.navigation__button--login:hover {
+  cursor: pointer;
+  background: #f33e3e;
+}
+
+.poster {
+  padding: 10px 15%;
+  background-color: #26a69a !important;
+  position: relative;
+}
+
+.poster__caption {
+  margin-top: 15px;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  z-index: 0;
+}
+
+.poster__caption > b {
+  font-size: 30px;
+  font-family: 'Domine', serif;
+}
+
+.poster__caption > span {
+  color: white;
+  display: inline-block;
+}
+
+.poster > .typing--degree {
+  margin-top: 45px;
+  background: white;
+  padding: 45px 30%;
+}
+
+.poster > .typing--degree .input-effect {
+  position: relative;
+}
+
+.poster > .typing--degree input[type="text"] {
+  font-size: 24px;
+  color: #333;
+  width: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.poster > .typing--degree input[type="text"]:focus {
+  outline: none;
+}
+
+.poster > .typing--degree .effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+
+.poster > .typing--degree .effect-16:focus ~ .focus-border,
+.poster > .typing--degree .has-content.effect-16 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.poster > .typing--degree .effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.poster > .typing--degree .effect-16:focus ~ label, .poster > .typing--degree .has-content.effect-16 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #3399FF;
+  transition: 0.3s;
+}
+
+.last-retrive {
+  padding: 15px 15%;
+  min-height: 45vh;
+}
+
+.last-retrive__content {
+  background-color: white;
+  border: #e2e2e2;
+  box-shadow: 0 1px 10px gray;
+  padding: 20px;
+}
+
+.last-retrive__content > h6 {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.last-retrive__content__list--students {
+  padding: 20px 10px;
+  line-break: normal;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.last-retrive__content__list--students > a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background: lightgray;
+  border-radius: 30px;
+  color: white;
+  margin: 3px;
+}
+
+.last-retrive__content__list--students > a > span {
+  color: #5b8bd4;
+}
+
+.footer {
+  padding-top: 15px;
+  background-color: #26a69a;
+  margin-top: auto;
+}
+
+.footer__content {
+  padding: 15px 15%;
+  display: flex;
+  align-items: center;
+  background-color: #009688;
+}
+
+.footer__content > p {
+  color: white;
+  font-weight: 300;
+}
+
+.footer__content > p:last-of-type {
+  margin-left: auto;
+}
+
+.vision-degree {
+  padding: 15px 15%;
+  text-align: center;
+}
+
+.vision-degree__title {
+  font-size: 22px;
+  padding: 10px;
+  color: #595a5e;
+}
+
+.vision-degree__content {
+  background-image: url("../assets/degree_of_bachelor_en.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  box-shadow: 1px 1px 20px #777777;
+  height: 80vh;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white;
+}
+
+.vision-degree__content > h2 {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  font-family: 'Marcellus SC', serif;
+  color: #595A5E;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.vision-degree__content--info {
+  position: absolute;
+  top: 49.2%;
+  left: 46%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.vision-degree__content--info > p {
+  color: #666561;
+  margin-bottom: 4%;
+}
+
+.vision-degree__content--number {
+  position: absolute;
+  top: 78%;
+  left: 32%;
+  text-align: left;
+}
+
+.vision-degree__content--number > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #e23131;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.vision-degree__content--number > a:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Home.css.map */

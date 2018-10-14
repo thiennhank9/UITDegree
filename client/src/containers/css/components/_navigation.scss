@@ -1,0 +1,38 @@
+.navigation {
+    padding: 10px 15%;
+    background-color: #26a69a !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__button--left {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+
+        & > i {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__button--login {
+        margin-left: auto;
+        padding: 8px 22px;
+        background: #df4646;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            background: rgb(243, 62, 62);
+        }
+    }
+}
